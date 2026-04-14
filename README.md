@@ -23,4 +23,4 @@ To start, I pulled the stats of all QBs to start a minimum of 14 games in each s
 | Wins              | 2.3669    |
 | db_epa            | 8.5048    |
 
-I then assigned a column to each player, containing 0 or 1, indicating whether they won MVP that year. Since only one player can win the MVP every year, the dataset was incredibly unbalanced, which means we need to make sure we dont create a dumb model, which will be discussed later.
+I then assigned a column to each player, containing 0 or 1, indicating whether they won MVP that year. Since only one player can win the MVP every year, the dataset was incredibly unbalanced. Which means we need to make sure we don't create a dumb model, which will be discussed later.
