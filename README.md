@@ -25,4 +25,10 @@ To start, I pulled the stats of all QBs to start a minimum of 14 games in each s
 
 I then assigned a column to each player, containing 0 or 1, indicating whether they won MVP that year. Since only one player can win the MVP every year, the dataset was incredibly unbalanced. Which means we need to make sure we don't create a dumb model, which will be discussed later. <br>
 
-In the table above, you can see VIF (Variance Inflation Factor) values. For the most part, all of the features have a VIF below 5, so multicollinearity is not a concern. Aside from passer rating (rtg) and drop-back EPA (db_epa), which are likely highly correlated. 
+In the table above, you can see VIF (Variance Inflation Factor) values. For the most part, all of the features have a VIF below 5, so multicollinearity is not a concern. Aside from passer rating (rtg) and drop-back EPA (db_epa), which are likely highly correlated. <br>
+
+After looking at different logistic regression models, the features I decided to use were total touchdowns (tot_TD), Wins, drop-back EPA, and aggressiveness. Agressiveness is the percentage of passes a QB threw where the receiver had a yard or less of separation. Heres the model output: <br>
+
+![MVP MO.png](https://github.com/Aeason06/MVP-Regression-Model/blob/main/images/MVP%20MO.png)
+
+
