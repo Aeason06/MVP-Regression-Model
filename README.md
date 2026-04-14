@@ -30,5 +30,8 @@ In the table above, you can see VIF (Variance Inflation Factor) values. For the 
 After looking at different logistic regression models, the features I decided to use were total touchdowns (tot_TD), Wins, drop-back EPA, and aggressiveness. Agressiveness is the percentage of passes a QB threw where the receiver had a yard or less of separation. Heres the model output: <br>
 
 ![MVP MO.png](https://github.com/Aeason06/MVP-Regression-Model/blob/main/images/MVP%20MO.png)
+<br>
+
+In this output, we can see that Wins are a much stronger predictor than everything else. 
 
 
