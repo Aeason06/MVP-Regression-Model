@@ -23,4 +23,6 @@ To start, I pulled the stats of all QBs to start a minimum of 14 games in each s
 | Wins              | 2.3669    |
 | db_epa            | 8.5048    |
 
-I then assigned a column to each player, containing 0 or 1, indicating whether they won MVP that year. Since only one player can win the MVP every year, the dataset was incredibly unbalanced. Which means we need to make sure we don't create a dumb model, which will be discussed later.
+I then assigned a column to each player, containing 0 or 1, indicating whether they won MVP that year. Since only one player can win the MVP every year, the dataset was incredibly unbalanced. Which means we need to make sure we don't create a dumb model, which will be discussed later. <br>
+
+In the table above, you can see VIF (Variance Inflation Factor) values. For the most part, all of the features have a VIF below 5, so multicollinearity is not a concern. Aside from passer rating (rtg) and drop-back EPA (db_epa), which are likely highly correlated. 
